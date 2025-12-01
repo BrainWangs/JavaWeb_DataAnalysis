@@ -1,9 +1,10 @@
 package vo;
 
 public class IoTData {
-    private String time;       // 时间戳
-    private String deviceName; // 设备名称
-    private String value;      // 数值 (可能是温度、湿度或烟雾浓度)
+
+    private String time;        // date_time
+    private String deviceName;  // device_name
+    private String value;       // temperature/humidity/smoke
 
     public IoTData(String time, String deviceName, String value) {
         this.time = time;
@@ -11,7 +12,15 @@ public class IoTData {
         this.value = value;
     }
 
-    public String getTime() { return time; }
-    public String getDeviceName() { return deviceName; }
-    public String getValue() { return value; }
+    public String getTime() {
+        return time;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

@@ -13,16 +13,19 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>CSVImportServlet</servlet-name>
-        <servlet-class>controller.CSVImportServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CSVImportServlet</servlet-name>
-        <url-pattern>/CSVImportServlet</url-pattern>
-    </servlet-mapping>
+    <!--已经使用注解的方式配置-->
+<!--    <servlet>-->
+<!--        <servlet-name>CSVImportServlet</servlet-name>-->
+<!--        <servlet-class>controller.CSVImportServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>CSVImportServlet</servlet-name>-->
+<!--        <url-pattern>/CSVImportServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
 
     <welcome-file-list>
+<!--        <welcome-file>Login.jsp</welcome-file>-->
         <welcome-file>view/ImportData.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

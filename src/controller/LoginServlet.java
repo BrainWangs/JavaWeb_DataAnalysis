@@ -1,5 +1,6 @@
 package controller;
 
+import dao.UserDAO;
 import service.UserLogin;
 import vo.User;
 
@@ -7,16 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-/**
- * 调用service层,用于处理登录请求,登录逻辑在service层
- */
 public class LoginServlet extends javax.servlet.http.HttpServlet {
-    private UserLogin userLogin;
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        this.userLogin = new UserLogin();
-    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -26,7 +19,8 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        User user = userLogin.login(username, password);
+        UserDAO dao = new UserDAO();
+        User user = dao.login(username, password);
 
         if (user != null) {
             // 登录成功

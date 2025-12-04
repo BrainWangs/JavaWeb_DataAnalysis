@@ -14,7 +14,11 @@ public class TemperatureServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         System.out.println("TemperatureServlet.doGet");
+
+        String deviceName = req.getParameter("deviceName");
+
         resp.setContentType("application/json;charset=UTF-8");
-        resp.getWriter().write(service.getChartData());
+        String jsonData = service.getChartData(deviceName);
+        resp.getWriter().write(jsonData);
     }
 }

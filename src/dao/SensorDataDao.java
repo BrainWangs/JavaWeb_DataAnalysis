@@ -17,17 +17,17 @@ public class SensorDataDao {
     }
 
     /**
-     * 获取指定表中全部传感器数据，按时间升序排序
+     * 获取指定表指定设备中全部传感器数据
      */
-    public List<SensorData> getAllData() {
-        System.out.println("SensorDataDao.getAllData");
+    public List<SensorData> getAllData(String deviceName) {
         List<SensorData> list = new ArrayList<>();
-        String sql = "SELECT id, record_time, device_name, value_text FROM " + tableName + " LIMIT 1000";
+        String sql = "SELECT id, record_time, device_name, value_text FROM " + tableName +
+                " WHERE device_name = ?" ;//+ " LIMIT 20000";
 
         try (Connection conn = DBUtil.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql);
-             ResultSet rs = ps.executeQuery()) {
-
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, deviceName);
+            ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 SensorData data = new SensorData();
                 data.setId(rs.getLong("id"));
@@ -36,10 +36,10 @@ public class SensorDataDao {
                 data.setValueText(Double.parseDouble(rs.getString("value_text")));
                 list.add(data);
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return list;
     }
+
 }

@@ -14,6 +14,8 @@
     </style>
 </head>
 <body>
+<%@ include file="Header.jsp" %>
+
 <div class="container">
     <h1>上传 CSV 导入 IoT 数据</h1>
 

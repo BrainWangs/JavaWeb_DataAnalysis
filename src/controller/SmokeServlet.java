@@ -15,8 +15,13 @@ public class SmokeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        System.out.println("SmokeServlet.doGet");
+
+        String deviceName = req.getParameter("deviceName");
+
         resp.setContentType("application/json;charset=UTF-8");
-        resp.getWriter().write(service.getChartData());
+        String jsonData = service.getChartData(deviceName);
+        resp.getWriter().write(jsonData);
     }
 }
 

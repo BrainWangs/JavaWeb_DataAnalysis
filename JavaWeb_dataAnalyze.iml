@@ -25,5 +25,6 @@
     <orderEntry type="library" name="mysql-connector-j-8.1.0" level="project" />
     <orderEntry type="library" name="gson-2.8.1" level="project" />
     <orderEntry type="library" name="echarts" level="application" />
+    <orderEntry type="library" name="echarts" level="application" />
   </component>
 </module>

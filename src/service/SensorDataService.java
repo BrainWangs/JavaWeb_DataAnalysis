@@ -20,9 +20,9 @@ public class SensorDataService {
         System.out.println("SensorDataService: " + tableName);
     }
 
-    public String getChartData() {
+    public String getChartData(String deviceName) {
+        List<SensorData> list = dao.getAllData(deviceName);
         System.out.println("SensorDataService.getChartData");
-        List<SensorData> list = dao.getAllData();
         JsonArray time = new JsonArray();
         JsonArray value = new JsonArray();
 

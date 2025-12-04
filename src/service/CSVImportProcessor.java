@@ -91,6 +91,9 @@ public class CSVImportProcessor {
         }
     }
 
+    /**
+     * 在字符串数组cols中查找指定key的索引位置
+     * */
     private int findIndex(String[] cols, String key) {
         key = key.toLowerCase();
         for (int i = 0; i < cols.length; i++) {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网上书城系统</title>
+    <title>超算数据可视化系统</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -57,14 +57,13 @@
 <header class="header">
     <div class="container">
         <div class="logo">
-            <h1>📚 学生管理系统</h1>
+            <h1>📚 超算数据可视化系统</h1>
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="StudentQuery.jsp">首页</a></li>
-                <li><a href="AddStudent.jsp">添加学生</a></li>
-                <li><a href="#">学生列表</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li><a href="/web/view/Login.jsp">登录</a></li>
+                <li><a href="/web/view/ImportData.jsp">导入数据</a></li>
+                <li><a href="/web/view/DataVisualize.jsp">数据图表</a></li>
             </ul>
         </nav>
     </div>

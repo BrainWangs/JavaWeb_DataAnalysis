@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b672d458-1a37-4a80-a652-5fae0403ed9b" name="更改" comment="添加TabBar, 修改前端样式">
+    <list default="true" id="b672d458-1a37-4a80-a652-5fae0403ed9b" name="更改" comment="修正相关bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/DataQuery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/DataQuery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/DataVisualize.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/DataVisualize.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/ImportData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/ImportData.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/TabBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/TabBar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +215,7 @@
       <workItem from="1765249946849" duration="134000" />
       <workItem from="1765250191937" duration="3851000" />
       <workItem from="1765271366925" duration="2615000" />
-      <workItem from="1765274007906" duration="4258000" />
+      <workItem from="1765274007906" duration="4817000" />
     </task>
     <task id="LOCAL-00001" summary="不使用servlet跳转">
       <option name="closed" value="true" />
@@ -263,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765276966862</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修正相关bug">
+      <option name="closed" value="true" />
+      <created>1765278909242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765278909242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +302,7 @@
     <MESSAGE value="添加jstl包" />
     <MESSAGE value="1" />
     <MESSAGE value="添加TabBar, 修改前端样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加TabBar, 修改前端样式" />
+    <MESSAGE value="修正相关bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正相关bug" />
   </component>
 </project>

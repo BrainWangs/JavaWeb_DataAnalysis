@@ -113,7 +113,7 @@
         }
 
         .device-btn.active {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #3a0ca3 100%);
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
             color: white;
             border: none;
             box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);

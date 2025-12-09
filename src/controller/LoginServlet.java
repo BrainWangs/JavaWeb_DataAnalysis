@@ -25,7 +25,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         if (user != null) {
             // 登录成功
             request.getSession().setAttribute("user", user);
-            response.sendRedirect("LoginSuccess.jsp");
+            response.sendRedirect(request.getContextPath() + "/view/ImportData.jsp");
         } else {
             // 登录失败
             request.setAttribute("msg", "用户名或密码错误");

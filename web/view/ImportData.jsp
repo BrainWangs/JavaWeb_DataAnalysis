@@ -196,7 +196,7 @@
         }
 
         .btn-upload {
-            background: linear-gradient(to right, #4361ee, #3a0ca3);
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
             border: none;
             padding: 0.75rem 2rem;
             font-weight: 600;
@@ -388,26 +388,22 @@
                         <i class="fas fa-info-circle me-2 text-primary"></i>文件要求
                     </h5>
                     <ul class="requirements-list">
-                        <li>必须包含 <code>Time</code> 字段</li>
-                        <li>必须包含 <code>Device</code> 字段</li>
-                        <li>第三列需为以下之一：
+                        <li>必须包含 <code>date_time</code> 字段</li>
+                        <li>必须包含 <code>device_name</code> 字段</li>
+                        <li>包含以下字段之一
                             <ul class="mt-1">
                                 <li><code>Temperature</code></li>
                                 <li><code>Humidity</code></li>
                                 <li><code>Smoke</code></li>
                             </ul>
                         </li>
-                        <li class="warning">CSV 文件应为 UTF-8 编码</li>
                     </ul>
 
                     <hr class="my-3">
 
                     <h6 class="fw-bold mb-3">示例 CSV 格式：</h6>
                     <div class="code-sample">
-                        Time,Device,Temperature<br>
-                        2023-10-01 08:00:00,Device001,23.5<br>
-                        2023-10-01 08:05:00,Device002,24.1<br>
-                        2023-10-01 08:10:00,Device001,23.8
+                        "id","_time","date_time","device_id","device_name","temperature","status"
                     </div>
 
                 </div>

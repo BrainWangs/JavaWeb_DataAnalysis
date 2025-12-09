@@ -97,7 +97,7 @@
         }
 
         .btn-search {
-            background: linear-gradient(to right, #4361ee, #3a0ca3);
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
             border: none;
             color: white;
             padding: 0.6rem 2rem;

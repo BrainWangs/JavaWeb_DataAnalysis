@@ -9,6 +9,14 @@
     <!-- 引入Bootstrap 图标库 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+
+        /* 在此处添加防止抖动的关键 CSS
+       强制指定行高，防止字体加粗(font-weight:500)时撑开高度*/
+        .sidebar-nav .nav-link {
+            line-height: 1.5 !important; /* 锁定行高 */
+            height: 50px; /* 显式指定高度，彻底杜绝高度变化 */
+        }
+
         :root {
             --sidebar-width: 240px;
             --sidebar-collapsed-width: 60px;
@@ -211,7 +219,7 @@
             }
         }
     </style>
-</head>
+
 <body>
 
 <!-- 顶部导航栏 -->

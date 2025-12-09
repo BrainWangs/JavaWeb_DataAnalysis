@@ -27,5 +27,6 @@
     <orderEntry type="library" name="echarts" level="application" />
     <orderEntry type="library" name="echarts" level="application" />
     <orderEntry type="library" name="taglibs-standard-impl-1.2.5" level="project" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

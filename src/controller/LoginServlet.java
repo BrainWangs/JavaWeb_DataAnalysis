@@ -1,13 +1,14 @@
 package controller;
 
-import dao.UserDAO;
 import service.UserLogin;
 import vo.User;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
+@WebServlet("/LoginServlet")
 public class LoginServlet extends javax.servlet.http.HttpServlet {
 
     @Override
@@ -19,8 +20,8 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        UserDAO dao = new UserDAO();
-        User user = dao.login(username, password);
+        UserLogin userLogin = new UserLogin();
+        User user = userLogin.login(username, password);
 
         if (user != null) {
             // 登录成功

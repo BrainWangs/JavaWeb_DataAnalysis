@@ -33,7 +33,7 @@ public class DataQueryDAO {
         if (threshold != null && !threshold.isEmpty())
             sql.append("AND value_text " + threshold + " ");
 
-        sql.append("ORDER BY record_time DESC LIMIT ? OFFSET ?");
+        sql.append("ORDER BY record_time ASC LIMIT ? OFFSET ?");
 
         try (Connection conn = DBUtil.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql.toString())) {

@@ -74,16 +74,22 @@ public class CSVImportProcessor {
 
                 if (batch.size() >= BATCH_SIZE) {
                     dao.batchInsert(targetTable, batch);
+                    dao.getConnection().commit();
                     batch.clear();
                 }
             }
 
             if (!batch.isEmpty()) {
                 dao.batchInsert(targetTable, batch);
+                dao.getConnection().commit();
             }
 
         } catch (Exception e) {
+            dao.getConnection().rollback();
             throw e;
+        } finally {
+            dao.getConnection().setAutoCommit(true);
+            dao.closeConnection();
         }
     }
 

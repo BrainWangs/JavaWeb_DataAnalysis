@@ -17,6 +17,7 @@ public class CSVImportProcessor {
     public void processCSV(InputStream in) throws Exception {
 
         dao.createTablesIfNotExists();
+        // 重要：关闭自动提交
         dao.getConnection().setAutoCommit(false);
 
         List<IoTData> batch = new ArrayList<>();

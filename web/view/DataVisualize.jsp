@@ -368,6 +368,7 @@
             .then(data => {
                 smokeChart.hideLoading();
                 const threshold = 50;
+                const alarmThreshold = 0.5; // 烟雾报警阈值
                 smokeChart.setOption({
                     ...chartCommonOption,
                     tooltip: {
@@ -376,20 +377,27 @@
                             return params.seriesName + '<br/>' + params.value[0] + ' : ' + params.value[1];
                         }
                     },
-                    xAxis: { type: 'category', data: data.time },
+                    xAxis: {
+                        type: 'category',
+                        data: data.time,
+                        min: data.time[0] // 设置横轴起始时间为数据最早时间
+                    },
                     yAxis: { type: 'value', name: '烟雾值' },
                     visualMap: {
                         show: false,
                         dimension: 1,
-                        pieces: [{ gt: 0, lte: threshold, color: '#4cc9f0' }, { gt: threshold, color: '#f72585' }]
+                        pieces: [
+                            { gt: 0, lte: alarmThreshold, color: '#f72585' }, // 报警数据（低于0.5）
+                            { gt: alarmThreshold, lte: threshold, color: '#4cc9f0' }, // 正常数据
+                            { gt: threshold, color: '#f72585' } // 超过阈值的数据
+                        ]
                     },
                     series: [{
                         name: '烟雾浓度',
                         type: 'scatter',
                         data: data.time.map((t, i) => [t, data.value[i]]),
-                        symbolSize: val => val[1] > threshold ? 15 : 8,
                     }],
-                    dataZoom: [{ type: 'slider', start: 0, end: 2}]
+                    dataZoom: [{ type: 'slider', start: 0, end: 2 }]
                 });
             });
     }

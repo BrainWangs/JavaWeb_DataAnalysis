@@ -14,8 +14,7 @@ public class IoTDataDAO {
 
     public Connection getConnection() throws Exception {
         if (conn == null || conn.isClosed()) {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            conn = DBUtil.getConnection();
         }
         return conn;
     }

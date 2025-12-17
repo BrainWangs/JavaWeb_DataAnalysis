@@ -105,8 +105,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <div class="login-logo">SYS</div>
+            <div class="login-logo">ULS</div>
             <span class="fw-bold">用户登录系统</span>
+<%--            <span> ${pageContext.request.contextPath}</span>--%>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -117,7 +118,7 @@
                     <a class="nav-link active" href="#">登录</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">注册</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/view/UserSignIn.jsp">注册</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">帮助</a>
@@ -190,7 +191,8 @@
                         </form>
 
                         <div class="text-center mt-4 pt-3 border-top">
-                            <p class="mb-2">没有账户？ <a href="#" class="text-decoration-none fw-semibold">立即注册</a></p>
+                            <p class="mb-2">没有账户？
+                                <a href="${pageContext.request.contextPath}/view/UserSignIn.jsp" class="text-decoration-none fw-semibold">立即注册</a></p>
                             <p class="mb-0"><a href="#" class="text-decoration-none">忘记密码？</a></p>
                         </div>
                     </div>

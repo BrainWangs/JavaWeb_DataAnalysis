@@ -336,8 +336,8 @@
                     <h4 class="card-title mb-4">
                         <i class="fas fa-cloud-upload-alt me-2 text-primary"></i>选择 CSV 文件
                     </h4>
-
-                    <form action="CSVImportServlet" method="post" enctype="multipart/form-data" id="uploadForm">
+                    <%--重要,使用el表达式动态获取上下文路径,否则会出现找不到页面的错误--%>
+                    <form action="${pageContext.request.contextPath}/CSVImportServlet" method="post" enctype="multipart/form-data" id="uploadForm">
                         <!-- 文件拖放区域 -->
                         <div class="upload-area" id="dropArea">
                             <div class="upload-icon">

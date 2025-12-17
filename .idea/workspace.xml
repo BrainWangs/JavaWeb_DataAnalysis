@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b672d458-1a37-4a80-a652-5fae0403ed9b" name="更改" comment="修正登录bug">
+    <list default="true" id="b672d458-1a37-4a80-a652-5fae0403ed9b" name="更改" comment="有问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DataQueryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DataQueryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/IoTDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/IoTDataDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/CSVImportProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CSVImportProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/IoTDataDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/IoTDataDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/service/CSVImportProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/service/CSVImportProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/ImportData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/ImportData.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dffc49c57b09acaf31f18a61e643050d3f138127" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -68,7 +75,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Tomcat 服务器.Tomcat 9.0.109.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test2&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/IDEA Projects/DataAnalysis/web/WEB-INF/lib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -223,6 +230,7 @@
       <workItem from="1765271366925" duration="2615000" />
       <workItem from="1765274007906" duration="4902000" />
       <workItem from="1765335613579" duration="1393000" />
+      <workItem from="1765967559152" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="不使用servlet跳转">
       <option name="closed" value="true" />
@@ -320,5 +328,13 @@
     <MESSAGE value="修正相关bug" />
     <MESSAGE value="修正登录bug" />
     <option name="LAST_COMMIT_MESSAGE" value="修正登录bug" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

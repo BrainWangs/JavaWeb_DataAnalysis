@@ -344,7 +344,6 @@
                                 <i class="fas fa-file-upload"></i>
                             </div>
                             <h5>拖放文件到此处或点击选择</h5>
-                            <p class="text-muted mb-3">支持 .csv 格式，文件大小不超过 10MB</p>
 
                             <!-- 文件选择按钮 -->
                             <div class="d-grid gap-2 d-md-block">
@@ -512,14 +511,6 @@
             }
 
             const file = csvFile.files[0];
-            const fileSize = file.size;
-            const maxSize = 10 * 1024 * 1024; // 10MB
-
-            if (fileSize > maxSize) {
-                e.preventDefault();
-                alert('文件大小不能超过10MB');
-                return false;
-            }
 
             // 验证文件类型
             const fileName = file.name.toLowerCase();
